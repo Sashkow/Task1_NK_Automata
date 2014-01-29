@@ -5,15 +5,11 @@ package nk_Automata.StatesStructure;
 
 /** nk automata state*/
 public abstract class State {
-	/** the binary form of state number represents automata gene states written sequentially. */ 
-	protected Integer number;
-	/** next state */
-	protected State next;
-	protected Integer weight;
+	protected StateParameters parameters;
 	
-	public State(Integer number,State next) {
-		this.number=number;
-		this.next=next;
+	public State(StateParameters parameters) {
+		this.parameters=parameters;
+		
 	}
 	
 	

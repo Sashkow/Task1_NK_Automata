@@ -2,23 +2,7 @@ package nk_Automata.StatesStructure;
 
 
 public class AttractorState extends State {
-	
-	
-
-	private Integer attractorId;
-	
-	/**the amount of basin states which the attractor state can be reached from*/
-	private Integer weight;
-	
-	public AttractorState(Integer number, State next, Integer attractorId) {
-		super(number, next);
-		this.attractorId=attractorId;
-		
+	public AttractorState(StateParameters parameters) {
+		super(parameters);
 	}
-	
-	
-	
-	
-	
-
 }
