@@ -1,12 +1,28 @@
 package nk_Automata.StatesStructure;
 
-public abstract class StateParameters {
+public class StateParameters {
 	Integer number;
-	State state;
+	State next;
 	
-	public StateParameters(Integer number, State state) {
+	public Integer getNumber() {
+		return number;
+	}
+
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
+
+	public State getNext() {
+		return next;
+	}
+
+	public void setNext(State next) {
+		this.next = next;
+	}
+
+	public StateParameters(Integer number, State next) {
 		this.number=number;
-		this.state=state;
+		this.next=next;
 		
 	}
 

@@ -3,6 +3,9 @@ package nk_Automata.StatesStructure;
 
 
 public class StateBuilder {
+	public State buildState(StateParameters parameters){
+		return new State(parameters);
+	}
 	public State buildState(AttractorStateParameters parameters){
 		return new AttractorState(parameters);	
 	}
